@@ -14,14 +14,14 @@ interface MovieAPIService {
 
     @Headers(
         "x-rapidapi-host: imdb236.p.rapidapi.com",
-        "x-rapidapi-key: 6819195278mshdf5606b96257801p10c0f8jsnbfc9647f5dc9"
+        "x-rapidapi-key: YOUR KEY"
     )
     @GET("imdb/top250-movies")
     fun getTop250Movies(): Call<List<Movie>>
 
     @Headers(
         "x-rapidapi-host: imdb236.p.rapidapi.com",
-        "x-rapidapi-key: 6819195278mshdf5606b96257801p10c0f8jsnbfc9647f5dc9"
+        "x-rapidapi-key: YOUR KEY"
     )
     @GET("imdb/upcoming-releases")
     fun getUpcomingReleases(
@@ -31,7 +31,7 @@ interface MovieAPIService {
 
     @Headers(
         "X-RapidAPI-Host: imdb236.p.rapidapi.com",
-        "X-RapidAPI-Key: 6819195278mshdf5606b96257801p10c0f8jsnbfc9647f5dc9" // Replace with your actual API key
+        "X-RapidAPI-Key: YOUR KEY" 
     )
     @GET("imdb/{id}")
     fun getMovieDetails(@Path("id") movieId: String): Call<IndivMovieDetails>
